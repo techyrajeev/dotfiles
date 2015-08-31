@@ -14,7 +14,6 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
@@ -185,11 +184,7 @@ let g:syntastic_javascript_checkers = ['jshint']
     let g:airline#extensions#branch#enabled = 1
     let g:airline#extensions#whitespace#enabled = 1
     let g:airline#extensions#hunks#non_zero_only = 1
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tabline#left_sep = ' '
-    let g:airline#extensions#tabline#left_alt_sep = '¦'
-    let g:airline#extensions#tabline#buffer_idx_mode = 1
-" }
+ }
 
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
