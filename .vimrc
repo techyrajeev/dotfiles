@@ -107,6 +107,8 @@ set nobackup
 set hlsearch
 set ignorecase
 set smartcase
+set showmatch		" Show matching brackets.
+set autowrite		" Automatically save before commands like :next and :make
 
 " Text formatting {
     set autoindent                          " copy indent from current line when starting a new line
@@ -184,7 +186,7 @@ let g:syntastic_javascript_checkers = ['jshint']
     let g:airline#extensions#branch#enabled = 1
     let g:airline#extensions#whitespace#enabled = 1
     let g:airline#extensions#hunks#non_zero_only = 1
- }
+" }
 
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
