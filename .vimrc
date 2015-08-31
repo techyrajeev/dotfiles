@@ -108,6 +108,8 @@ set nobackup
 set hlsearch
 set ignorecase
 set smartcase
+set showmatch		" Show matching brackets.
+set autowrite		" Automatically save before commands like :next and :make
 
 " Text formatting {
     set autoindent                          " copy indent from current line when starting a new line
