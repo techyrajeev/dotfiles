@@ -187,10 +187,6 @@ let g:syntastic_javascript_checkers = ['jshint']
     let g:airline#extensions#branch#enabled = 1
     let g:airline#extensions#whitespace#enabled = 1
     let g:airline#extensions#hunks#non_zero_only = 1
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tabline#left_sep = ' '
-    let g:airline#extensions#tabline#left_alt_sep = '¦'
-    let g:airline#extensions#tabline#buffer_idx_mode = 1
 " }
 
 " NERDTree
