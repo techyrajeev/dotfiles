@@ -199,6 +199,16 @@ let g:ctrlp_by_filename = 1
 let g:ctrlp_max_files = 600
 let g:ctrlp_max_depth = 5
 
+" Set statusline - silently fail if vim lacks version / plugins
+set statusline=%F%m%r%h%w\%=[%4l/%-4L\ %3v]\ [%p%%]
+if (v:version >= 700)
+    set statusline=%F%m%r%h%w\%=[%4l/%-4L\ %3v/%-3{len(getline('.'))}]\ [%p%%]
+    silent! call fugitive#statusline() " We have to call it first in order to test existence
+    if exists('*fugitive#statusline')
+	set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ \%=\ [%4l/%-4L\ %3v/%-3{len(getline('.'))}]\ [%p%%]
+    endif
+endif
+
 " status line
 "    if has('statusline')
 "        function! SetStatusLineStyle()
