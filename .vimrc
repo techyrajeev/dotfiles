@@ -106,6 +106,8 @@ set ignorecase
 set smartcase
 set showmatch		" Show matching brackets.
 set autowrite		" Automatically save before commands like :next and :make
+set wildmenu		" Used for command line completion
+set wildmode=longest:full,full 	            "Complete to the longest common string and will invoke wildmenu 
 
 " Text formatting {
     set autoindent                          " copy indent from current line when starting a new line
