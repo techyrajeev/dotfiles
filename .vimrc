@@ -1,7 +1,4 @@
 set nocompatible
-if has("gui_running")
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
-endif
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
